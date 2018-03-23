@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function(req,res){
-    res.send('It\'s working hal!');
+    res.send('It\'s working hall!');
 });
 
 app.post('/create-payment1/', async function(req,res){
