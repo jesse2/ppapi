@@ -14,8 +14,8 @@ app.get('/', function(req,res){
 
 app.post('/create-payment1/', async function(req,res){
     var auth={
-        user:'AfNpCz974apNThOLr60y8Pe4_7sfoTFoxtmozQfiqd7opP9J4nTYxa1C3ZV4mL-M2X_RoTdHmwdxrOVI',
-        pass:'EPPZpa9iL2TTmr0n28oRyvvILOId91QD38GQcWObH13sHkoOtG_HLE47dvfcQxjukNlfNKENz9hAHa65'
+        user:'',
+        pass:''
     };
 
      await request.post({url:'https://api.sandbox.paypal.com/v1/oauth2/token', body:'grant_type=client_credentials', auth:auth}, (e,r,body)=>{
